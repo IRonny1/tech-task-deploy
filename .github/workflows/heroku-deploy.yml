@@ -1,8 +1,8 @@
-name: '' #set whatevername you want to your github job
+name: 'DeployHeroku'
 on:
   push:
     branches:
-      - backend # set the events you would like to trigger this job
+      - backend
 
 jobs:
   build:
@@ -10,15 +10,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Build, Push and Deploy to Heroku #set the whatever name you want to this step
+      - name: Build, Push and Deploy to Heroku
         id: heroku
-        uses: mtsmachado8/heroku-deploy@v1.0.0  # use the latest version of the action
+        uses: mtsmachado8/heroku-deploy@v1.0.0
         with:
-          email: ${{ secrets.HEROKU_EMAIL }} # your heroku email
-          api_key: ${{ secrets.HEROKU_API_KEY }} # your  heroku api key
-          app_name: ${{ secrets.HEROKU_APP_NAME }} # you aplication name
-          dockerfile_path: './Dockerfile' # set the path to the folder wher the Dokerfile is located
-          options: '' # Docker Build Options
+          email: ${{ secrets.HEROKU_EMAIL }}
+          api_key: ${{ secrets.HEROKU_API_KEY }}
+          app_name: ${{ secrets.HEROKU_APP_NAME }}
+          dockerfile_path: ''
+
 
 
 
