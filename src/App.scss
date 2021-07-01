@@ -2,22 +2,21 @@
 @import url(./style/Content.css);
 @import url(./style/newPatient.css);
 @import url("https://fonts.googleapis.com/css2?family=Asap:ital@1&display=swap");
+
 body {
-  margin: 0px;
-  padding: 0px;
-  height: 100vh;
-  width: 100vw;
-  font-family: "Asap", sans-serif;
-  background-color: #dcdde1;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Asap", sans-serif;
+    background-color: #dcdde1;
 }
 
 .app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100vh;
+    display: flex;
+    height: 100vh;
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }

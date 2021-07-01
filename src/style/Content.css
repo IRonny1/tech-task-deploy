@@ -1,0 +1,182 @@
+.content {
+  height: 100%;
+  width: 100%;
+}
+.content .header {
+  background-color: #dcdde1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  width: 100%;
+  border-bottom: 3px solid #c8c8c8;
+}
+.content .header p {
+  margin: 0px 0px 0px 25px;
+}
+.content .header div {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.content .header div button {
+  margin-right: 15px;
+}
+.content .header #age {
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.content .edit-patient-form button {
+  margin: 5px;
+}
+.content .sidebar-patients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.content .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #dcdde1;
+  height: 90%;
+}
+.content .info .short-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 500px;
+  background-color: #dcdde1;
+}
+.content .info .short-info table {
+  height: 215px;
+  width: 100%;
+  margin-left: 25px;
+}
+.content .info .short-info table tr {
+  border-bottom: 1px solid #c8c8c8;
+}
+.content .info .short-info table .odd {
+  text-align: right;
+}
+.content .info .comments {
+  width: 100%;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #c8c8c8;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: #cccccc;
+}
+.content .info .comments div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: auto;
+  word-break: break-all;
+}
+.content .info .comments p {
+  margin: 10px 0px 0px 15px;
+}
+.content .info .comments ul {
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+.content .info .comments li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px;
+}
+.content .info .comments .new-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.content .info .comments .new-comment div {
+  width: 90%;
+}
+.content .info .comments .create-commentInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  bottom: 15px;
+}
+.content .info .comments .create-commentInput input {
+  width: 90%;
+}
+.content .info .comments .create-commentInput button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}

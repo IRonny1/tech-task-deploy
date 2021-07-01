@@ -1,0 +1,22 @@
+.new-patient-wrapper ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+.new-patient-wrapper button {
+  margin: 0px 0px 0px 25px;
+}
+
+.new-patient-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0px 0px 25px;
+}
+
+.new-patient-form {
+  width: 25%;
+  margin-right: 65%;
+}

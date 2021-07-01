@@ -1,0 +1,20 @@
+.new-patient-wrapper {
+    ul {
+        padding-inline-start: 0px;
+    }
+
+    button {
+        margin: 0px 0px 0px 25px;
+    }
+}
+
+.new-patient-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px 0px 25px;
+}
+
+.new-patient-form {
+    width: 25%;
+    margin-right: 65%;
+}
