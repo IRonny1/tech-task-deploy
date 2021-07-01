@@ -1,4 +1,3 @@
-FROM ubuntu
-MAINTAINER ironny
-RUN apt-get update
-CMD ["echo", "Docker container has started"]
+FROM openjdk:11-jre-slim
+COPY build/libs/* app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
