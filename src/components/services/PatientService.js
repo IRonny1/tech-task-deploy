@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default class PatientService {
     savePatient(patient) {
-        axios.post('http://localhost:8090/patientLoad', {
+        axios.post('https://stormy-castle-76619.herokuapp.com/patientLoad', {
             firstname: patient.firstname,
             lastname: patient.lastname,
             age: patient.age,
@@ -15,12 +15,12 @@ export default class PatientService {
     }
 
     saveComment(newCommentForDatabase) {
-        axios.post('http://localhost:8090/createComment', newCommentForDatabase)
+        axios.post('https://stormy-castle-76619.herokuapp.com/createComment', newCommentForDatabase)
     };
 
     getPatients() {
         return new Promise((resolve, reject) => {
-            axios.get('http://localhost:8090/patientLoad')
+            axios.get('https://stormy-castle-76619.herokuapp.com/patientLoad')
                 .then((res) => {
                     let patientsDB = res.data;
                     let patients = [];
@@ -48,7 +48,7 @@ export default class PatientService {
 
     getComments() {
         return new Promise((resolve, reject) => {
-            axios.get('http://localhost:8090/commentsLoad')
+            axios.get('https://stormy-castle-76619.herokuapp.com/commentsLoad')
                 .then((res) => {
                     let comments = res.data;
                     resolve(comments);
@@ -57,15 +57,15 @@ export default class PatientService {
     };
 
     editPatient(editedPatientInfo) {
-        axios.post('http://localhost:8090/patientLoad', editedPatientInfo);
+        axios.post('https://stormy-castle-76619.herokuapp.com/patientLoad', editedPatientInfo);
     }
 
     deletePatient(patientId) {
-        axios.delete(`http://localhost:8090/patientLoad/${patientId}`);
+        axios.delete(`https://stormy-castle-76619.herokuapp.com/patientLoad/${patientId}`);
     }
 
     deleteComment(commentId) {
-        axios.delete(`http://localhost:8090/commentsLoad/${commentId}`);
+        axios.delete(`https://stormy-castle-76619.herokuapp.com/commentsLoad/${commentId}`);
     }
 };
 
