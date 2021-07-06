@@ -16,19 +16,19 @@ public class PatientController {
   public Patient newPatient(@RequestBody Patient newPatient) {
     return repository.save(newPatient);
   }
-  @CrossOrigin(origins = "*")
+
   @GetMapping("patientLoad")
   public List<Patient> patientLoad () {
     return repository.findAll();
   }
 
-  @CrossOrigin(origins = "*")
+
   @GetMapping("patientLoad/{id}")
   public Patient getPatient(@PathVariable Long id) {
     return repository.findById(id).get();
   }
 
-  @CrossOrigin(origins = "*")
+
   @PutMapping("patientLoad/{id}")
   public Patient patient(@RequestBody PatientDto patientDto, @PathVariable("id") Long id) {
     Patient patient = repository.findById(id).get();
@@ -42,7 +42,7 @@ public class PatientController {
     return repository.save(patient);
   }
 
-  @CrossOrigin(origins = "*")
+
   @DeleteMapping("patientLoad/{id}")
   public void patient(@PathVariable("id") Long id) {
     repository.deleteById(id);
