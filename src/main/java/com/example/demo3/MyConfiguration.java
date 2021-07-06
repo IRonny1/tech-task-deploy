@@ -11,7 +11,8 @@ public class MyConfiguration {
         return new WebMvcConfigurerAdapter() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**");
+                registry.addMapping("/**")
+                        .allowedOrigins("https://tech-task-vitech.herokuapp.com");
             }
         };
     }
