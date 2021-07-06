@@ -11,6 +11,7 @@ public class CommentsController {
     private final CommentsRepository repository;
     private final PatientRepository patientRepository;
 
+    @CrossOrigin(origins = "*")
     @PostMapping("createComment")
     public Comments newPatient(@RequestBody CommentDto newComments) {
         Comments comments = Comments.builder()
@@ -21,11 +22,13 @@ public class CommentsController {
         return repository.save(comments);
     }
 
+    @CrossOrigin(origins = "*")
     @GetMapping("commentsLoad")
     public List<Comments> commentsLoad () {
         return repository.findAll();
     }
 
+    @CrossOrigin(origins = "*")
     @DeleteMapping("commentsLoad/{id}")
     public void Comments(@PathVariable("id") Long id) {
         repository.deleteById(id);
