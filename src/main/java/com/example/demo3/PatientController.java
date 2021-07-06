@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "https://tech-task-vitech.herokuapp.com")
+@CrossOrigin(origins = "https://tech-task-vitech.herokuapp.com", allowedHeaders = "*")
 @RestController
 @AllArgsConstructor
 public class PatientController {
